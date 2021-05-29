@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/page_task.css">
+    <link href="../css/prettify.css" rel="stylesheet">
+    <title>Задача #1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="task">
+            <h1 class="task__title">Задача #1</h1>
+
+            <div class="task__answer">
+                <p class="task__answer-text">
+                    <pre class="prettyprint lang-js">
+for (var i = 0; i < 10; i++) {
+    setTimeout(function() {
+        console.log(i);
+    }
+};
+                    </pre>
+                    Пока setTimeout будет выполнятся цикл завершит свою работу и i будет равен 10, после чего будет
+                    выполнена функция console.log(i) которая выведет 10 раз по 10 т.е i.
+                </p>
+
+            </div>
+            <div class="task__btn-container">
+                <a href="../index.html" class="task__answer-link">
+                    <div class="task__btn">
+                        Назад
+                    </div>
+                </a>
+                <div class="task__answer-link" title="Откройте консоль" onclick="task1()">
+                    <div class="task__btn run-code">
+                        Запустить код
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="../js/tasks.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        ! function ($) {
+            $(function () {
+                window.prettyPrint && prettyPrint()
+            })
+        }(window.jQuery)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+
+.container {
+    width: 80%;
+    margin: 3% auto;
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    background: rgb(194, 223, 157);
+    border-radius: 10px;
+    padding-bottom: 3%;
+}
+
+.title {
+    color: #e06666;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.task {
+    margin-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.task__number {
+    color: rgb(71, 118, 219);
+    padding: 1% 0;
+} 
+.task__quest {
+    height: 230px;
+    background: white;
+    overflow: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.task__answer-link {
+    text-decoration: none;
+    color: white;
+}
+
+.task__btn {
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    margin: 0 auto;
+    background: #1155cc;
+}

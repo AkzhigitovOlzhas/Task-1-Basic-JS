@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/page_task.css">
+    <link href="../css/prettify.css" rel="stylesheet">
+    <title>Задача #1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="task">
+            <h1 class="task__title">Задача #1</h1>
+
+            <div class="task__answer">
+                <p class="task__answer-text">
+                    <div id="cart-items">
+                        <div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+                        <div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+                        <div class="item">Bread <span class="qty">x 2</span></div>
+                        <div class="item">Cheese <span class="qty">x 1</span></div>
+                        <div class="item">Chocolate bar <span class="qty">x 3</span></div>
+                    </div>
+<br>                    
+                    <pre class="prettyprint lang-js">
+let parentEl = document.getElementById('cart-items');
+let elements = parentEl.querySelectorAll('div');
+elements[1].remove();
+
+let spanEl = document.createElement('span');
+spanEl.classList.add('qty');
+spanEl.textContent = ' x 4';
+let newEl = document.createElement('div');
+newEl.textContent = 'Canned Fish';
+newEl.appendChild(spanEl);
+
+parentEl.replaceChild(newEl,elements[4]);</pre>
+                </p>
+
+            </div>
+            <div class="task__btn-container">
+                <a href="../index.html" class="task__answer-link">
+                    <div class="task__btn">
+                        Назад
+                    </div>
+                </a>
+                <div class="task__answer-link" title="Откройте консоль" onclick="task7()">
+                    <div class="task__btn run-code">
+                        Запустить код
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="../js/tasks.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        ! function ($) {
+            $(function () {
+                window.prettyPrint && prettyPrint()
+            })
+        }(window.jQuery)
+    </script>
+</body>
+
+</html>

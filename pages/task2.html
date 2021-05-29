@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/page_task.css">
+    <link href="../css/prettify.css" rel="stylesheet">
+    <title>Задача #2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="task">
+            <h1 class="task__title">Задача #2</h1>
+
+            <div class="task__answer">
+                <p class="task__answer-text">
+                    <pre class="prettyprint lang-js">
+function getDate() {
+    let now = new Date();
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let hours = {
+        13: 1,
+        14: 2,
+        15: 3,
+        16: 4,
+        17: 5,
+        18: 6,
+        19: 7,
+        20: 8,
+        21: 9,
+        22: 10,
+        23: 11
+    };
+    result = 'Today is : ' + days[now.getDay()] + '.\nCurrent time is : ';
+    result += (now.getHours() >= 12 && now.getHours() <= 23) ?
+        (hours[now.getHours()-1] + ' PM:') : now.getHours() + ' AM:';
+    result +=now.getMinutes() + ':' + now.getSeconds();
+    
+    alert(result);
+    console.log(result);
+} 
+function reverseNumber() {
+    let x = prompt('Введите число: ', 12345);
+    let result = x.toString().split('').reverse().join('');
+
+    alert(`Число ${x} теперь: ${result}` )
+    console.log(result);
+}
+
+function getFactorial() {
+    let num = Number(prompt('Введите чило для нахождения факториала: ', 5));
+    let result = 1;
+    for (let i = num; i > 0; i--) {
+        result *= i;
+    }
+
+    alert(`Факториал числа ${num}: ${result}`)
+    console.log(result);
+}
+
+function getMax() {
+    let a = Number(prompt('Введите чило (1): ', 5));
+    let b = Number(prompt('Введите чило (2): ', 10));
+    result = (a > b) ? a : b;
+    alert(`Большее из двух чисел: ${result}`)
+    console.log(result);
+}
+
+function joinElements(array = ["Red", "Green", "White", "Black"]) { 
+    result = '\'' + array.join(',') + '\'';
+    result += '\n\'' + array.join('+') + '\'';
+    alert(`Array: ${array} \n${result}`);
+    console.log(result);
+}
+
+function getMonth() {
+    let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let date = prompt('Введите дату в формате "11/13/2014": ', '11/13/2014');
+    let result = (date.indexOf('/') >= 0) ? month[Number(date.split('/')[0]) - 1] : (date.indexOf('.') >= 0) ? month[Number(date.split('.')[0]) - 1] : 'Error, Incorrect data!';
+
+    alert(`Output: ${result}`)
+    console.log(result);
+}
+
+function isUppercase() {
+    let str = prompt('Введите строку: ', 'Hello world');
+    let result = (!isNaN(str[0])) ? 'not symbol' : (str[0] == str[0].toUpperCase()) ? 'uppercase' : 'lowercase';
+
+    alert(`First character is ${result}`)
+    console.log(result);
+}
+
+function drowSmile() {
+    let canvas = document.getElementById('smile');
+    let ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.arc(75, 75, 50, 0, Math.PI * 2, true);
+    ctx.moveTo(110, 75);
+    ctx.arc(75, 75, 35, 0, Math.PI, false);
+    ctx.moveTo(65, 65);
+    ctx.arc(60, 65, 5, 0, Math.PI * 2, true);
+    ctx.moveTo(95, 65);
+    ctx.arc(90, 65, 5, 0, Math.PI * 2, true);
+    ctx.stroke(); 
+}</pre>
+
+                    <p>При запуске, код дополнительно выводится в консоль.</p>
+                    Здесь появится рисунок:
+                    <canvas id="smile" width="150px" height="150px"></canvas>
+                </p>
+
+            </div>
+            
+            <div class="task__btn-container">
+                <a href="../index.html" class="task__answer-link">
+                    <div class="task__btn">
+                        Назад
+                    </div>
+                </a>
+                <a href="#" class="task__answer-link" title="Откройте консоль"  onclick="task2()">
+                    <div class="task__btn run-code">
+                        Запустить код
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="../js/tasks.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        ! function ($) {
+            $(function () {
+                window.prettyPrint && prettyPrint()
+            })
+        }(window.jQuery)
+    </script>
+</body>
+
+</html>

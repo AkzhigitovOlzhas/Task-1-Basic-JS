@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/prettify.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>JavaScript Practical Tasks</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">JavaScript Practical Tasks</h1>
+
+        <div class="task">
+            <h2 class="task__number">Задача #1</h2>
+
+            <pre class="task__quest" >
+                <pre class="prettyprint lang-js">
+for (var i = 0; i < 10; i++) {
+    setTimeout(function() {
+        console.log(i);
+    }
+};
+</pre>
+Что выведет консоль и почему?    
+            </pre>
+
+            <a href="pages/task1.html" class="task__answer-link">
+                <div class="task__btn">
+                    Открыть решение
+                </div>
+            </a>
+
+        </div>
+
+        <div class="task">
+            <h2 class="task__number">Задача #2</h2>
+
+            <pre class="task__quest">
+Write a JavaScript program to display the current day and time in the following format.  
+Sample Output : 
+Today is : Friday. 
+Current time is : 4 PM : 50 : 22
+
+Write a JavaScript function that reverse a number. 
+Example x = 32243;
+Expected Output : 34223
+
+Write a JavaScript program to calculate the factorial of a number. In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. 
+For example, 5! = 5 x 4 x 3 x 2 x 1 = 120 	
+
+Write a JavaScript program that accept two integers and display the larger.
+
+Write a simple JavaScript program to join all elements of the following array into a string. 
+Sample array : myColor = ["Red", "Green", "White", "Black"];
+Expected Output : 
+"Red,Green,White,Black"
+"Red+Green+White+Black"
+
+Write a JavaScript function to get the month name from a particular date. 
+Test Data :
+<pre class="prettyprint lang-js">
+    console.log(month_name(new Date("10/11/2009"))); 
+    console.log(month_name(new Date("11/13/2014")));</pre>Output :
+    "October" 
+    "November" 
+
+Write a JavaScript program to test the first character of a string is uppercase or not
+
+Write a JavaScript program to draw a smile	
+            </pre>
+
+            <a href="pages/task2.html" class="task__answer-link">
+                <div class="task__btn">
+                    Открыть решение
+                </div>
+            </a>
+
+        </div>
+        <div class="task">
+            <h2 class="task__number">Задание 1</h2>
+
+            <pre class="task__quest">
+На странице есть верстка:<pre class="prettyprint lang-html">
+&lt;div&nbsp;id=&quot;string-1&quot;&gt;Ядра&nbsp;в&nbsp;вёдра,&nbsp;выдру&nbsp;в&nbsp;тундру!&lt;/div&gt;
+&lt;div&nbsp;id=&quot;string-2&quot;&gt;Выдрав&nbsp;с&nbsp;выдры&nbsp;в&nbsp;тундре&nbsp;гетры&lt;/div&gt;      
+&lt;div&nbsp;id=&quot;string-3&quot;&gt;В&nbsp;недрах&nbsp;тундры,&nbsp;выдры&nbsp;в&nbsp;гетрах&nbsp;&lt;/div&gt;       
+&lt;div&nbsp;id=&quot;string-4&quot;&gt;Вытру&nbsp;гетрой&nbsp;выдре&nbsp;морду&nbsp;&lt;/div&gt;     
+&lt;div&nbsp;id=&quot;string-5&quot;&gt;Тырят&nbsp;в&nbsp;вёдра&nbsp;ядра&nbsp;кедров!&lt;/div&gt;    
+&lt;div&nbsp;id=&quot;string-6&quot;&gt;Вытру&nbsp;выдрой&nbsp;ядра&nbsp;кедров&lt;/div&gt;
+</pre>
+Необходимо поочередно обратиться к каждому тэгу в нужном порядке, и вывести их содержимое в консоль, чтобы получилась осмысленная скороговорка.
+
+Вывод в консоли:
+В недрах тундры, выдры в гетрах
+Тырят в вёдра ядра кедров!
+Выдрав с выдры в тундре гетры
+Вытру выдрой ядра кедров
+Вытру гетрой выдре морду
+Ядра в вёдра, выдру в тундру!
+            </pre>
+
+            <a href="pages/task3.html" class="task__answer-link">
+                <div class="task__btn">
+                    Открыть решение
+                </div>
+            </a>
+
+        </div>
+
+        <div class="task">
+            <h2 class="task__number">Задание 2</h2>
+
+            <pre class="task__quest">
+На странице есть верстка
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;element&quot;&gt;Element 1&lt;/div&gt;
+&lt;div class=&quot;element&quot;&gt;Element 2&lt;/div&gt;
+&lt;div class=&quot;element&quot;&gt;Element 3&lt;/div&gt;
+&lt;div class=&quot;element&quot;&gt;Element 4&lt;/div&gt;
+&lt;div class=&quot;element&quot;&gt;Element 5&lt;/div&gt;
+&lt;div class=&quot;element&quot;&gt;Element 6&lt;/div&gt;
+</pre>
+С помощью JS необходимо первым трем  элементам задать красный цвет текста, а остальным трем - зеленый.
+
+            </pre>
+
+            <a href="pages/task4.html" class="task__answer-link">
+                <div class="task__btn">
+                    Открыть решение
+                </div>
+            </a>
+
+        </div>
+
+        <div class="task">
+            <h2 class="task__number">Задание 3</h2>
+
+            <pre class="task__quest">
+На странице есть контейнер &lt;ol id="todo-list"&gt;&lt;/ol&gt;, необходимо с помощью цикла добавить в него пять задач (элементов &lt;li&gt;) с классом task и текстом, взятым из массива задач из пяти элементов:&nbsp;</span></p>
+
+var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+
+Ожидаемый результат в инспекторе после выполнения скрипта:
+<pre class="prettyprint lang-html"> 
+&lt;ol id="todo-list"&gt;
+&lt;li class="task"&gt;Buy lemonade&lt;/li&gt;
+&lt;li class="task"&gt;Make toasts&lt;/li&gt;
+&lt;li class="task"&gt;Repair car&lt;/li&gt;
+&lt;li class="task"&gt;Play games&lt;/li&gt;
+&lt;li class="task"&gt;Pet a cat&lt;/li&gt;
+&lt;/ol&gt;</pre></pre>
+            <a href="pages/task5.html" class="task__answer-link">
+                <div class="task__btn">
+                    Открыть решение
+                </div>
+            </a>
+
+        </div>
+
+        <div class="task">
+            <h2 class="task__number">Задание 4</h2>
+
+            <pre class="task__quest">На странице есть следующая разметка:
+<pre class="prettyprint lang-html"> 
+&lt;article&gt;
+&lt;h3&gt;What is Lorem Ipsum?&lt;/h3&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.&lt;/p&gt;
+&lt;h3&gt;Where does it come from?&lt;/h3&gt;
+&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section 1.10.32. from &quot;The Extremes of Good and Evil&quot; by Cicero&lt;/p&gt;
+&lt;h3&gt;Why do we use it?&lt;/h3&gt;
+&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#39;Content here, content here&#39;, making it look like readable English.&lt;/p&gt;
+&lt;/article&gt;</pre>
+Вам необходимо с помощью JavaScript вставить после каждого тега &lt;p&gt; тег &lt;hr&gt;, для визуального отделения абзацев друг от друга.
+Указания:
+<ul><li>Подразумевается, что вышеуказанная разметка находится внутри тега &lt;body&gt;</li>
+<li>Нельзя модифицировать указанную разметку.</li>
+<li>За использование цикла дополнительные баллы.</li></ul>
+</pre>
+            <a href="pages/task6.html" class="task__answer-link">
+                <div class="task__btn">
+                    Открыть решение
+                </div>
+            </a>
+
+        </div>
+
+        <div class="task">
+            <h2 class="task__number">Задание 5</h2>
+
+            <pre class="task__quest">
+Дана такая разметка:<pre class="prettyprint lang-html">
+&lt;div id=&quot;cart-items&quot;&gt;
+&lt;div class=&quot;item&quot;&gt;Milk 1 l.&lt;span class=&quot;qty&quot;&gt;x 2&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;item&quot;&gt;Cola 1.5 l. &lt;span class=&quot;qty&quot;&gt;x 1&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;item&quot;&gt;Bread&lt;span class=&quot;qty&quot;&gt;x 2&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;item&quot;&gt;Cheese&lt;span class=&quot;qty&quot;&gt;x 1&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;item&quot;&gt;Chocolate bar&lt;span class=&quot;qty&quot;&gt;x 3&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+Необходимо с помощью JavaScript удалить элемент &quot;Cola 1.5 l&quot; и заменить товар &quot;Chocolate bar&quot; на &quot;Canned Fish&quot;, количеством 4 штуки.
+Указания:
+<ul><li>Для удаления использовать .remove()</li> <li>Для замены использовать .replaceChild()</li> <li>Подразумевается, что вышеуказанная разметка находится внутри тега &lt;body&gt;.</li></ul>
+ </pre>
+
+            <a href="pages/task7.html" class="task__answer-link">
+                <div class="task__btn">
+                    Открыть решение
+                </div>
+            </a>
+
+        </div>
+
+        <div class="task">
+            <h2 class="task__number">Задание 6</h2>
+
+            <pre class="task__quest">
+<p><span style="font-weight: 400;">Напишите программу для создания списка задач, которые будет вводить пользователь:</span></p> 
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Для каждого пункта:</span></li>
+<ul>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Запрашивайте содержимое пункта у пользователя с помощью prompt.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Создавайте пункт и добавляйте его к UL.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Процесс прерывается, когда пользователь нажимает "Отмена" или вводит пустую строку.</span></li>
+</ul>
+</ul>                 
+            </pre>
+
+            <a href="pages/task8.html" class="task__answer-link">
+                <div class="task__btn">
+                    Открыть решение
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+ 
+    <script src="js/prettify.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        ! function ($) {
+            $(function () {
+                window.prettyPrint && prettyPrint()
+            })
+        }(window.jQuery)
+    </script>
+</body>
+
+</html>

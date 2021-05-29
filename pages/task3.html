@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/page_task.css">
+    <link href="../css/prettify.css" rel="stylesheet">
+    <title>Задание 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="task">
+            <h1 class="task__title">Задание 1</h1>
+
+            <div class="task__answer">
+                <p class="task__answer-text">
+                    <div id="string-1">Ядра в вёдра, выдру в тундру!</div>
+                    <div id="string-2">Выдрав с выдры в тундре гетры</div>
+                    <div id="string-3">В недрах тундры, выдры в гетрах </div>
+                    <div id="string-4">Вытру гетрой выдре морду </div>
+                    <div id="string-5">Тырят в вёдра ядра кедров!</div>
+                    <div id="string-6">Вытру выдрой ядра кедров</div>
+<br>
+                    <pre class="prettyprint lang-js">
+for (let i = 1; i < 7; i++) {
+    console.log(document.getElementById('string-' + i).textContent);
+}
+                    </pre>
+                </p>
+
+            </div>
+            <div class="task__btn-container">
+                <a href="../index.html" class="task__answer-link">
+                    <div class="task__btn">
+                        Назад
+                    </div>
+                </a>
+                <div class="task__answer-link" title="Откройте консоль" onclick="task3()">
+                    <div class="task__btn run-code">
+                        Запустить код
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="../js/tasks.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        ! function ($) {
+            $(function () {
+                window.prettyPrint && prettyPrint()
+            })
+        }(window.jQuery)
+    </script>
+</body>
+
+</html>
